@@ -408,7 +408,7 @@ elif page == "📊 Admin Dashboard":
             )
 
 # ----------------------------
-# FOOTER
+# FOOTER Section
 # ----------------------------
 st.divider()
 st.caption(

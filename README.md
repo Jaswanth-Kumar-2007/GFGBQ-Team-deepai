@@ -35,14 +35,11 @@ CivicFix AI is a smart governance platform that uses Generative AI to automatica
 ## Setup Instructions
 
 1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd GFGBQ-Team-deepai
+   ```git clone https://github.com/ByteQuest-2025/GFGBQ-Team-deepai.git
    ```
 
 2. **Create a virtual environment** (if not already created)
-   ```bash
-   python -m venv venv
+   ``` python -m venv venv
    ```
 
 3. **Activate virtual environment**
@@ -62,19 +59,19 @@ CivicFix AI is a smart governance platform that uses Generative AI to automatica
    - Add: `MISTRAL_API_KEY=your_api_key_here`
 
 6. **Run the application**
-   ```bash
+   ```
    streamlit run app.py
    ```
 
 ## Features Implemented
 
-✅ **AI-Powered Classification**: Uses Mistral AI to intelligently categorize complaints into 8+ categories
-✅ **Smart Prioritization**: AI assigns priority scores (1-10) based on urgency, safety, and impact
-✅ **Image Support**: Upload photos with description for complaint documentation
-✅ **Auto-Routing**: Automatically routes complaints to appropriate government departments
-✅ **Admin Dashboard**: Real-time analytics with charts showing complaint distribution, priority levels, and department-wise breakdown
-✅ **Multi-Modal Input**: Supports text, image, and voice complaint submissions
-✅ **Complaint Tracking**: Stores and tracks all complaints with unique IDs
+ **AI-Powered Classification**: Uses Mistral AI to intelligently categorize complaints into 8+ categories
+ **Smart Prioritization**: AI assigns priority scores (1-10) based on urgency, safety, and impact
+ **Image Support**: Upload photos with description for complaint documentation
+ **Auto-Routing**: Automatically routes complaints to appropriate government departments
+ **Admin Dashboard**: Real-time analytics with charts showing complaint distribution, priority levels, and department-wise breakdown
+ **Multi-Modal Input**: Supports text, image, and voice complaint submissions
+ **Complaint Tracking**: Stores and tracks all complaints with unique IDs
 
 ## How It Works
 
