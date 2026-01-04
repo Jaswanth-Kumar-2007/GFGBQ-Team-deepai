@@ -35,11 +35,13 @@ CivicFix AI is a smart governance platform that uses Generative AI to automatica
 ## Setup Instructions
 
 1. **Clone the repository**
-   ```git clone https://github.com/ByteQuest-2025/GFGBQ-Team-deepai.git
+   ``` bash
+   git clone https://github.com/ByteQuest-2025/GFGBQ-Team-deepai.git
    ```
 
 2. **Create a virtual environment** (if not already created)
-   ``` python -m venv venv
+   ``` bash
+    python -m venv venv
    ```
 
 3. **Activate virtual environment**
