@@ -1,84 +1,135 @@
-# Problem Statement
-PS 12: AI for Grievance Redressal in Public Governance
+# AI-Powered Citizen Grievance Analysis System
 
-# Project Name
+## Project Name
+
 CivicFix AI - Intelligent Citizen Grievance Portal
 
-# Team Name
+## Team Name
+
 Deep AI
 
-# Deployed Link
-(To be added)
+## Deployed Link
 
-# Demo Video Link
+https://civicfix-deepai.streamlit.app/
+
+## Demo Video Link
+
 https://drive.google.com/file/d/1yq18K0etuZcgB6P6aepg-Lx0zPywrs4L/view?usp=sharing
 
-# PPT Link
+## PPT Link
+
 https://1drv.ms/p/c/242A04F9105323F0/IQA1o9HTKexYTo2PhOf-X-xoAfO4esJGziax2CZSWzHtQz8?e=OtJXZq
 
 ---
 
+## 📌 Problem Statement
+
+PS-12 : AI-Powered Citizen Grievance Analysis System
+
+Public governance bodies receive a large number of citizen grievances every day in the form of unstructured text and voice complaints. Manual review and routing of these grievances is time-consuming, leading to delays, backlogs, and inefficient handling of critical issues. There is a need for an intelligent system that can automatically understand and organize citizen complaints.
+
+## 🎯 Objective
+
+To build an AI-driven platform that analyzes citizen grievances and automatically:
+
+- Classifies complaints into relevant categories
+- Generates concise summaries
+- Identifies the priority level of each grievance
+
+## 💡 Solution Overview
+
+This project provides a web-based system where users can submit grievances through text or voice. Voice inputs are converted into text and processed using NLP techniques. The system returns structured insights such as complaint category, summary, and urgency, assisting faster and more transparent grievance handling.
+
 ## Project Overview
+
 CivicFix AI is a smart governance platform that uses Generative AI to automatically categorize, prioritize, and route citizen complaints. It eliminates manual triage bottlenecks and ensures critical public issues are resolved faster.
 
 ## Features
+
 - **Auto-Categorization:** AI detects if a complaint is about Roads, Sanitation, etc.
 - **Urgency Scoring:** AI rates complaints (1-10) to highlight emergencies.
 - **Admin Dashboard:** A visual view of city-wide issues.
 
 ## Tech Stack
+
 - **Frontend/Backend:** Python (Streamlit)
-- **AI Engine:** Mistral AI API (mistral-medium-latest), Groq AI
+- **AI Engine:** Mistral AI API (mistral-medium-latest) and Groq AI
 - **Data Analysis:** Pandas, Matplotlib
 - **Environment:** python-dotenv
 
 ## Setup Instructions
 
-1. **Clone the repository**
-   ``` bash
-   git clone https://github.com/ByteQuest-2025/GFGBQ-Team-deepai.git
-   ```
+1.**Clone the repository**
 
-2. **Create a virtual environment** (if not already created)
-   ``` bash
-    python -m venv venv
-   ```
+```bash
+git clone https://github.com/ByteQuest-2025/GFGBQ-Team-deepai
+```
 
-3. **Activate virtual environment**
-   - Windows: `venv\Scripts\activate`
-   - Linux/Mac: `source venv/bin/activate`
+2.**Change the Directory**
 
-4. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+cd GFGBQ-Team-deepai
+```
 
-5. **Set up API Key**
-   - Get your Mistral AI API key from: https://console.mistral.ai
-   - Sign up/login and navigate to API keys section
-   - Create a new API key
-   - Create a `.env` file in the root directory
-   - Add: `MISTRAL_API_KEY=your_api_key_here`
+3.**Create a virtual environment** (if not already created)
 
-   -Get your Groq AI API key from - https://console.groq.com/keys
-   -Create a new API key
-   -In .env file, add 'GROQ_API_KEY=your_api_key_here'
+```bash
+python -m venv venv
+```
 
-6. **Run the application**
-   ```
-   streamlit run app.py
-   ```
+4.**Activate virtual environment**
+
+- Windows: `venv\Scripts\activate`
+- Linux/Mac: `source venv/bin/activate`
+
+5.**Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+6.**Set up API Key**
+
+Get three FREE API keys:
+
+a.Mistral AI (Required)
+
+Visit: [Mistral](https://console.mistral.ai)
+Create account → API keys → Create new key
+Features: Text analysis, image analysis, language detection
+
+b.Groq API (Required for audio)
+
+Visit: [Groq](https://console.groq.com/keys)
+Sign up (free, no credit card) → Create API Key
+Features: Ultra-fast audio transcription (5-10 seconds)
+
+
+6.**Create .env file in root**
+
+```bash
+MISTRAL_API_KEY=your_mistral_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+HUGGINGFACE_API_KEY=your_huggingface_api_key_here
+```
+
+7.**Run the application**
+
+```bash
+streamlit run app.py
+```
+
+Opens at [http://localhost:8501](http://localhost:8501)
 
 ## Features Implemented
 
- **AI-Powered Classification**: Uses Mistral AI to intelligently categorize complaints into 8+ categories
- **Smart Prioritization**: AI assigns priority scores (1-10) based on urgency, safety, and impact
- **Image Support**: Upload photos with description for complaint documentation
- **Auto-Routing**: Automatically routes complaints to appropriate government departments
- **Admin Dashboard**: Real-time analytics with charts showing complaint distribution, priority levels, and department-wise breakdown
- **Multi-Modal Input**: Supports text, image, and voice complaint submissions
- **Multi language Input**: Supports all languages
- **Complaint Tracking**: Stores and tracks all complaints with unique IDs
+- ✅ **AI-Powered Classification**: Uses Mistral AI to intelligently categorize complaints into 8+ categories
+- ✅ **Smart Prioritization**: AI assigns priority scores (1-10) based on urgency, safety, and impact
+- ✅ **Image Support**: Upload photos with description for complaint documentation
+- ✅ **Auto-Routing**: Automatically routes complaints to appropriate government departments
+- ✅ **Admin Dashboard**: Real-time analytics with charts showing complaint distribution, priority levels, and department-wise breakdown
+- ✅ **Multi-Modal Input**: Supports text, image, and voice complaint submissions
+- ✅ **Complaint Tracking**: Stores and tracks all complaints with unique IDs
 
 ## How It Works
 
@@ -95,7 +146,7 @@ CivicFix AI is a smart governance platform that uses Generative AI to automatica
    - Department-wise breakdown
    - Recent complaints table with export functionality
 
-## Categories Supported
+## 📃Categories Supported
 
 - Civic Infrastructure
 - Sanitation
@@ -105,3 +156,14 @@ CivicFix AI is a smart governance platform that uses Generative AI to automatica
 - Utilities (Electricity, Water)
 - Administrative Delays
 - Other
+
+---
+
+## ⚠️ Disclaimer
+
+This system is designed to assist grievance understanding and improve processing efficiency.
+It does not replace human decision-making or take administrative actions independently.
+
+---
+
+THANK YOU
